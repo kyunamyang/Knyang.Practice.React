@@ -1,7 +1,6 @@
-import './App.css';
-import 'idioms/Sample';
-import { Sample } from './idioms';
-import { Person, WorkItem } from './domains';
+import '@/App.css';
+import { Sample } from '@idioms';
+import { Person, WorkItem } from '@domains';
 
 function App() {
   //const [count, setCount] = useState(0)
