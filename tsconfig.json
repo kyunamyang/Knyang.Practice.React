@@ -17,11 +17,11 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
-      "@assets": ["./assets"],
-      "@domains": ["./domains"],
-      "@idioms": ["./idioms"],
-      "@layouts": ["./layouts"],
-    }
+      // "@assets": ["./assets"],
+      // "@domains": ["./domains"],
+      // "@idioms": ["./idioms"],
+      // "@layouts": ["./layouts"],
+    },
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

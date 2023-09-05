@@ -1,6 +1,7 @@
 import '@/App.css';
-import { Sample } from '@idioms';
-import { Person, WorkItem } from '@domains';
+import { Sample } from 'idioms';
+import { Person, WorkItem } from 'domains';
+import Progress from './idioms/Progress';
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -15,6 +16,10 @@ function App() {
       <button className='btn btn-secondary'>Secondary</button>
 
       <WorkItem></WorkItem>
+
+      <Progress></Progress>
+      <br></br>
+      <Progress classNames={['progress-primary', 'w-72']}></Progress>
     </>
   );
 }
