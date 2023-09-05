@@ -1,7 +1,8 @@
 import '@/App.css';
 import { Sample } from 'idioms';
 import { Person, WorkItem } from 'domains';
-import Progress from './idioms/Progress';
+import { Progress, Card } from 'idioms';
+import imageUrl from './assets/react.svg';
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -17,9 +18,11 @@ function App() {
 
       <WorkItem></WorkItem>
 
-      <Progress></Progress>
-      <br></br>
       <Progress classNames={['progress-primary', 'w-72']}></Progress>
+
+      <Card title='Sample' description='test desc' classNames={['w-96', 'bg-base-100', 'shadow-xl']}>
+        <img src={imageUrl} alt='test' className='object-scale-down h-48 w-96' />
+      </Card>
     </>
   );
 }
